@@ -15,6 +15,35 @@
     </nav>
 
     <main>
+        <header>
+            <figure>
+                <img src="utfprLogo.png" alt="Logo da UTFPR">
+                <figcaption>Logo da UTFPR</figcaption>
+            </figure>
+        </header>
+        <form >
+            <label for="inputNome">Nome</label>
+            <label for="inputEmail">E-mail</label>
+            <label for="inputSenha">Senha</label>
+            <label for="inputDataNascimento">Data de Nascimento</label>
+            <label for="inputGenero">Gênero</label>
+            <label for="sobre">Diga um pouco sobre você!</label>
+
+            <input type="text" name="Nome" id="inputNome" placeholder="Como devemos lhe chamar?" required>
+            <input type="text" name="E-mail" id="inputEmail" placeholder="Insira seu melhor e-mail" required>
+            <input type="password" name="Senha" id="inputSenha" placeholder="Insira uma senha segura" required>
+            <input type="date" name="dataNascimento" id="inputDataNascimento" required>
+            <select id="inputGenero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="eminino">Feminino</option>
+            </select>
+            
+            <textarea name="sobreVc" id="inputSobreVc"></textarea>
+
+            <br>
+            <input type="submit" value="Finalizar Cadastro">
+        </form>
+
         <section id="expProfissional">
             <h3>Experiência Profissional</h3>
             <dl>
@@ -36,6 +65,7 @@
     </main>
 
     <footer id="rodape">
+        <h3>Sobre</h3>
         <p>Página criada por <strong>Pedro Bittencourt</strong> na disciplina de programação web front-end</p>
         <p>Cornélio Procópio, PR - 2025 </p>
     </footer>

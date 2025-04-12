@@ -21,25 +21,29 @@
                 <figcaption>Logo da UTFPR</figcaption>
             </figure>
         </header>
-        <form >
+        
+        <form>
             <label for="inputNome">Nome</label>
-            <label for="inputEmail">E-mail</label>
-            <label for="inputSenha">Senha</label>
-            <label for="inputDataNascimento">Data de Nascimento</label>
-            <label for="inputGenero">Gênero</label>
-            <label for="sobre">Diga um pouco sobre você!</label>
-
             <input type="text" name="Nome" id="inputNome" placeholder="Como devemos lhe chamar?" required>
+        
+            <label for="inputEmail">E-mail</label>
             <input type="text" name="E-mail" id="inputEmail" placeholder="Insira seu melhor e-mail" required>
+        
+            <label for="inputSenha">Senha</label>
             <input type="password" name="Senha" id="inputSenha" placeholder="Insira uma senha segura" required>
+        
+            <label for="inputDataNascimento">Data de Nascimento</label>
             <input type="date" name="dataNascimento" id="inputDataNascimento" required>
+        
+            <label for="inputGenero">Gênero</label>
             <select id="inputGenero" name="genero">
                 <option value="masculino">Masculino</option>
-                <option value="eminino">Feminino</option>
+                <option value="feminino">Feminino</option>
             </select>
-            
+        
+            <label for="inputSobreVc">Diga um pouco sobre você!</label>
             <textarea name="sobreVc" id="inputSobreVc"></textarea>
-
+        
             <br>
             <input type="submit" value="Finalizar Cadastro">
         </form>
